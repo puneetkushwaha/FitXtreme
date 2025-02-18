@@ -5,12 +5,20 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #1e40af; /* Blue color for primary elements */
+  --accent-color: #fbbf24;  /* Accent color for buttons or highlights */
+  --glass-bg: rgba(255, 255, 255, 0.1); /* Glassmorphism background */
+  --glass-border: rgba(255, 255, 255, 0.2); /* Glassmorphism border */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary-color: #60a5fa; /* Lighter blue for dark mode */
+    --accent-color: #facc15;  /* Lighter yellow accent color for dark mode */
+    --glass-bg: rgba(0, 0, 0, 0.1); /* Darker glassmorphism background */
+    --glass-border: rgba(255, 255, 255, 0.2); /* Lighter glassmorphism border */
   }
 }
 
@@ -18,4 +26,49 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px); /* Apply blur for glass effect */
+  border-radius: 15px;
+  border: 1px solid var(--glass-border);
+  padding: 20px;
+}
+
+/* Custom primary button with accent color */
+button.primary {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+button.primary:hover {
+  background-color: var(--accent-color);
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Additional customization for glassmorphism on modal */
+.glass-modal {
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+  padding: 30px;
 }
