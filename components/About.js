@@ -1,5 +1,6 @@
+// components/About.js
+
 import { FaDumbbell, FaHeartbeat, FaAppleAlt } from "react-icons/fa";
-import Mission from "./Mission";
 import Services from "./Services";
 
 export default function About() {
@@ -33,8 +34,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Mission and Services */}
-        <Mission />
+        {/* Services */}
         <Services />
       </div>
     </section>

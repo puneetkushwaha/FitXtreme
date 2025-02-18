@@ -77,16 +77,16 @@ export default function Footer() {
               <h4 className="text-gray-400 text-sm">Follow us:</h4>
             </div>
             <div className="flex space-x-6">
-              <Link href="https://github.com/puneetkushwaha">
+              <Link href="https://github.com/puneetkushwaha" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="text-3xl text-gray-400 hover:text-blue-600 cursor-pointer transition duration-300 ease-in-out transform hover:scale-110" />
               </Link>
-              <Link href="https://www.instagram.com/itzpuneett/">
+              <Link href="https://www.instagram.com/itzpuneett/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="text-3xl text-gray-400 hover:text-pink-600 cursor-pointer transition duration-300 ease-in-out transform hover:scale-110" />
               </Link>
-              <Link href="https://www.twitter.com">
+              <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                 <FaTwitter className="text-3xl text-gray-400 hover:text-blue-400 cursor-pointer transition duration-300 ease-in-out transform hover:scale-110" />
               </Link>
-              <Link href="https://www.linkedin.com/in/puneettkushwaha/">
+              <Link href="https://www.linkedin.com/in/puneettkushwaha/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-3xl text-gray-400 hover:text-blue-700 cursor-pointer transition duration-300 ease-in-out transform hover:scale-110" />
               </Link>
             </div>
@@ -100,6 +100,7 @@ export default function Footer() {
                 type="email"
                 placeholder="Enter your email"
                 className="px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
               />
               <button className="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg shadow-md transition-all duration-300 transform hover:scale-105">
                 Subscribe

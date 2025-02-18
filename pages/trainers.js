@@ -7,7 +7,7 @@ export default function Trainers() {
   const trainers = [
     {
       id: 1,
-      name: "John Doe",
+      name: "Ayush Bajpai",
       image: "/trainer (2).jpg",
       bio: "John is a certified personal trainer with over 5 years of experience in strength training and nutrition. His passion is helping clients achieve their fitness goals and maintain a healthy lifestyle.",
       expertise: "Strength Training, Nutrition",
@@ -15,7 +15,7 @@ export default function Trainers() {
     },
     {
       id: 2,
-      name: "Jane Smith",
+      name: "Akbar Raza",
       image: "/trainer (1).jpg",
       bio: "Jane specializes in yoga and mindfulness coaching. She helps clients to not only improve their fitness but also their mental well-being.",
       expertise: "Yoga, Mindfulness",
@@ -23,7 +23,7 @@ export default function Trainers() {
     },
     {
       id: 3,
-      name: "Sam Wilson",
+      name: "Sarthak Gupta",
       image: "/trainer (3).jpg",
       bio: "Sam is an expert in HIIT training and group fitness. He focuses on high-energy workouts that boost endurance and strength.",
       expertise: "HIIT, Group Fitness",
