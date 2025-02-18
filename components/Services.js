@@ -1,5 +1,3 @@
-// components/Services.js
-
 import { FaDumbbell, FaHeartbeat, FaAppleAlt } from "react-icons/fa";
 
 export default function Services() {
@@ -35,6 +33,8 @@ export default function Services() {
               Work with our certified nutritionists to create a customized meal plan that fits your fitness goals. Learn how to fuel your body for better performance, weight management, and overall health.
             </p>
           </div>
+
+          {/* Yoga Classes */}
           <div className="bg-gray-800 p-8 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
             <FaAppleAlt className="text-5xl text-green-500 mb-4" />
             <h4 className="text-2xl font-semibold mb-4">Yoga Classes</h4>
@@ -42,6 +42,8 @@ export default function Services() {
               Find inner peace and improve flexibility with our calming and restorative yoga classes. Perfect for beginners and seasoned yogis, these classes promote both physical and mental well-being.
             </p>
           </div>
+
+          {/* Cardio Training */}
           <div className="bg-gray-800 p-8 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
             <FaAppleAlt className="text-5xl text-green-500 mb-4" />
             <h4 className="text-2xl font-semibold mb-4">Cardio Training</h4>
@@ -49,6 +51,8 @@ export default function Services() {
               Boost your heart health and endurance with our cardio training programs. Whether it's treadmill running, cycling, or rowing, our cardio sessions will help you burn calories and enhance cardiovascular health.
             </p>
           </div>
+
+          {/* Wellness Programs */}
           <div className="bg-gray-800 p-8 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
             <FaAppleAlt className="text-5xl text-green-500 mb-4" />
             <h4 className="text-2xl font-semibold mb-4">Wellness Programs</h4>

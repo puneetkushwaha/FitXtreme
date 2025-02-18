@@ -1,5 +1,3 @@
-// components/About.js
-
 import { FaDumbbell, FaHeartbeat, FaAppleAlt } from "react-icons/fa";
 import Mission from "./Mission";
 import Services from "./Services";

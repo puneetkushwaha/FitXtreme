@@ -6,9 +6,12 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
+  const [loading, setLoading] = useState(false); // Loading state
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    setLoading(true); // Start loading
 
     try {
       const { data, error } = await supabase
@@ -24,7 +27,10 @@ export default function Contact() {
       setEmail("");
       setMessage("");
     } catch (error) {
+      console.error('Error sending message:', error);
       setStatus("Error sending message, please try again.");
+    } finally {
+      setLoading(false); // Stop loading
     }
   };
 
@@ -74,14 +80,19 @@ export default function Contact() {
           ></textarea>
         </div>
 
-        {status && <p className="text-center text-xl text-red-600">{status}</p>}
+        {status && (
+          <p className={`text-center text-xl ${status.includes("Error") ? 'text-red-600' : 'text-green-600'}`}>
+            {status}
+          </p>
+        )}
 
         <div className="text-center">
           <button
             type="submit"
             className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
+            disabled={loading} // Disable button while loading
           >
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </div>
       </form>

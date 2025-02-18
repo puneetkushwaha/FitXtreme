@@ -1,5 +1,3 @@
-// components/Footer.js
-
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiMail } from "react-icons/hi"; // For email icon

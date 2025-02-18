@@ -1,4 +1,3 @@
-// components/Reviews.js
 import { useState, useEffect } from "react";
 import { db } from "../lib/firebase"; // Import Firestore
 import { collection, addDoc, getDocs, query, orderBy, limit } from "firebase/firestore";
@@ -95,24 +94,23 @@ export default function Reviews() {
       </form>
 
       {/* Display Reviews */}
-<div className="max-w-2xl mx-auto">
-  {reviews.length > 0 ? (
-    reviews.map((review, index) => (
-      <div key={index} className="bg-white p-6 mb-4 rounded-lg shadow-md">
-        <h3 className="text-xl font-semibold text-black">{review.name}</h3> {/* Name in Black */}
-        <p className="text-black mt-2">{review.review}</p> {/* Message in Black */}
-        <p className="text-black text-sm mt-2">
-          {review.timestamp?.seconds
-            ? new Date(review.timestamp.seconds * 1000).toLocaleString()
-            : "Unknown Date"}
-        </p> {/* Timestamp in Black */}
+      <div className="max-w-2xl mx-auto">
+        {reviews.length > 0 ? (
+          reviews.map((review, index) => (
+            <div key={index} className="bg-white p-6 mb-4 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-black">{review.name}</h3> {/* Name in Black */}
+              <p className="text-black mt-2">{review.review}</p> {/* Message in Black */}
+              <p className="text-black text-sm mt-2">
+                {review.timestamp?.seconds
+                  ? new Date(review.timestamp.seconds * 1000).toLocaleString()
+                  : "Unknown Date"}
+              </p> {/* Timestamp in Black */}
+            </div>
+          ))
+        ) : (
+          <p className="text-center text-lg text-gray-400">No reviews yet.</p>
+        )}
       </div>
-    ))
-  ) : (
-    <p className="text-center text-lg text-gray-400">No reviews yet.</p>
-  )}
-</div>
-
     </div>
   );
 }
