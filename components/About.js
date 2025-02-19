@@ -1,6 +1,5 @@
 // components/About.js
 
-import { FaDumbbell, FaHeartbeat, FaAppleAlt } from "react-icons/fa";
 import Services from "./Services";
 
 export default function About() {
@@ -24,7 +23,6 @@ export default function About() {
           <div>
             <video
               src="/gym.mp4"
-              alt="Gym Video"
               className="w-full h-auto rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-105"
               autoPlay
               loop
