@@ -1,4 +1,4 @@
-import { FaDumbbell, FaHeartbeat, FaAppleAlt, FaYoga } from "react-icons/fa";
+import { FaDumbbell, FaHeartbeat, FaAppleAlt, } from "react-icons/fa";
 
 const Services = () => {
   return (

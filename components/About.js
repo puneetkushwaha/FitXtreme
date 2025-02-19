@@ -14,7 +14,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <p className="text-lg mb-4">
-              FitXtreme is not just a gym; it's a fitness community that empowers you to reach your full potential. We offer top-of-the-line equipment, personalized training programs, and expert guidance every step of the way.
+              FitXtreme is not just a gym; It&apos;s a fitness community that empowers you to reach your full potential. We offer top-of-the-line equipment, personalized training programs, and expert guidance every step of the way.
             </p>
             <p className="text-lg">
               From weight training to group fitness classes, FitXtreme is the perfect place for anyone looking to achieve their health and fitness goals, no matter their starting point.
